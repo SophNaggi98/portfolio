@@ -1,0 +1,273 @@
+@font-face {
+  font-family: michroma;
+  src: url(michroma-regular-webfont.woff2);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: notable;
+  src: url(notable-regular-webfont.woff2);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: zendos;
+  src: url(zendots-regular-webfont.woff2);
+  font-weight: bold;
+  font-style: normal;
+}
+
+.forside {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+}
+
+li {
+  list-style: none;
+  position: sticky;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  position: sticky;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  position: sticky;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: rgb(255, 2, 196);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -350%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+h1 {
+  color: #42b395;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  text-align: center;
+  font-family: notable;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+}
+
+p,
+.diagram2 {
+  color: aliceblue;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: michroma;
+}
+
+a {
+  color: #000000;
+  font-family: zendos;
+}
+
+.koding,
+.koding2,
+.web,
+.techno,
+.futuristisc,
+.ux,
+.svg,
+.css,
+.html,
+.diagram2 {
+  color: aliceblue;
+  margin-top: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: michroma;
+}
+
+.mediaquery {
+  border-top: 30px;
+  border-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: aliceblue;
+  font-family: michroma;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: sticky;
+}
+
+ul {
+  margin-left: 50px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 100px;
+  position: sticky;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: michroma;
+  color: rgb(1, 111, 255);
+  padding: 0 20px;
+  position: sticky;
+}
+
+/*opgaver1*/
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  width: 100%;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.ux2 {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.link,
+.emnesite,
+.link3,
+.link4,
+.link5 {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 100px;
+  background-color: #42b395;
+  font-family: zendos;
+  font-size: large;
+}
+
+/*opgaver2*/
+
+.svg {
+  margin-top: 20px;
+  color: aliceblue;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.diagram {
+  width: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.blandet {
+  width: 100%;
+}
+
+/*lidt om mig selv*/
+
+.koding5 {
+  color: aliceblue;
+  margin-left: 50px;
+  margin-top: 93px;
+  font-family: michroma;
+}
